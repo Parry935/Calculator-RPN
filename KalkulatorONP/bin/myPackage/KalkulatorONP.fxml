@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myController.PaneController">
+   <children>
+      <Pane maxHeight="588.0" maxWidth="600.0" minHeight="588.0" minWidth="600.0" prefHeight="588.0" prefWidth="600.0" style="-fx-background-color: #99ccff;">
+         <children>
+            <GridPane layoutY="200.0" prefHeight="388.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="clearCalc" mnemonicParsing="false" onAction="#buttonAction" prefHeight="98.0" prefWidth="241.0" style="-fx-background-color: #cc9900;" text="Clear" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorMinus" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="-" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorFactorial" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="!" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_3" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="3" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorSQRT" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="SQRT" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Lato Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorPercent" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="\%" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_6" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="6" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_2" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="2" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="closeBracket" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text=")" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorPower" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="^" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_9" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="9" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorDot" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="." textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorPlus" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="+" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_8" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="8" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_5" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="5" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="0" textAlignment="CENTER" textFill="#f5f5f5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_1" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="1" textAlignment="CENTER" textFill="#f5f5f5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_4" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="4" textAlignment="CENTER" textFill="#f5f5f5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorMulti" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="x" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorDiv" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="/" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="openBracket" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="(" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="operatorEquals" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #3399ff;" text="=" textAlignment="CENTER" textFill="#f5f5f5" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="number_7" mnemonicParsing="false" onAction="#buttonAction" prefHeight="97.0" prefWidth="120.0" style="-fx-background-color: #003366;" text="7" textAlignment="CENTER" textFill="#f5f5f5">
+                     <font>
+                        <Font name="Lato Bold" size="46.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <Label contentDisplay="CENTER" layoutX="14.0" layoutY="12.0" lineSpacing="2.0" prefHeight="48.0" prefWidth="70.0" text="INFIX" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Dubai Regular" size="27.0" />
+               </font></Label>
+            <Label fx:id="displayINFIX" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="12.0" prefHeight="48.0" prefWidth="488.0" style="-fx-background-color: #4775d1; -fx-border-color: #000000;" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label fx:id="displayANS" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="123.0" prefHeight="48.0" prefWidth="488.0" style="-fx-background-color: #4775d1; -fx-border-color: #000000;" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label fx:id="displayRPN" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="68.0" prefHeight="48.0" prefWidth="488.0" style="-fx-background-color: #4775d1; -fx-border-color: #000000;" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="68.0" prefHeight="48.0" prefWidth="70.0" text="RPN" textAlignment="RIGHT">
+               <font>
+                  <Font name="Dubai Regular" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="123.0" prefHeight="48.0" prefWidth="70.0" text="ANS" textAlignment="RIGHT">
+               <font>
+                  <Font name="Dubai Regular" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
